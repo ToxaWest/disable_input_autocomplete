@@ -1,4 +1,4 @@
-export class disableInputAutocomplete {
+export class disableInputAutocompleteClass {
     constructor(id){
         this.id = id
     }
@@ -26,12 +26,16 @@ export class disableInputAutocomplete {
         let el = document.getElementById(this.id);
         const el2 = document.createElement('input');
         el2.classList = el.classList;
-        el = disableInputAutocomplete.hide(el);
-        el2.name = disableInputAutocomplete.randomId();
+        el = disableInputAutocompleteClass.hide(el);
+        el2.name = disableInputAutocompleteClass.randomId();
         el2.autocomplete="new-password";
         el.parentNode.appendChild(el2);
         el2.oninput = function (e) {
             el.value = e.target.value;
         }
     }
+}
+
+export function disableInputAutocomplete(id){
+    new disableInputAutocompleteClass(id).disable()
 }
