@@ -1,0 +1,24 @@
+{
+  "name": "disable_input_autocomplete",
+  "version": "1.0.0",
+  "description": "Disable browser autocomplete without jQuery and 'autocomplete=\"off\"'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ToxaWest/disable_input_autocomplete.git"
+  },
+  "keywords": [
+    "disable",
+    "input",
+    "autocomplete"
+  ],
+  "author": "ToxaWest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToxaWest/disable_input_autocomplete/issues"
+  },
+  "homepage": "https://github.com/ToxaWest/disable_input_autocomplete#readme"
+}
