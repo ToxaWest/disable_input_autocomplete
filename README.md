@@ -6,6 +6,10 @@ Disable browser autocomplete without jQuery and 'autocomplete="off"'
 1. Require 'disableAutocomplete.min.js' to your project
 2. Pass the input id to the 'disableInputAutocomplete' class and call the 'disable()' method. 
 
+```htnl
+import {disableInputAutocomplete} from "disable_input_autocomplete";
+```
+
 # Example
 ```html
 <input name="username" id="myId"/>

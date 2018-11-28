@@ -1,4 +1,4 @@
-class disableInputAutocomplete {
+export class disableInputAutocomplete {
     constructor(id){
         this.id = id
     }
