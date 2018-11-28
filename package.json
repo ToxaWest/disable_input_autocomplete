@@ -1,6 +1,6 @@
 {
   "name": "disable_input_autocomplete",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Disable browser autocomplete without jQuery and 'autocomplete=\"off\"'",
   "main": "index.js",
   "scripts": {
