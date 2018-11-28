@@ -26,6 +26,7 @@ export class disableInputAutocompleteClass {
         let el = document.getElementById(this.id);
         const el2 = document.createElement('input');
         el2.classList = el.classList;
+        el2.placeholder = el.placeholder;
         el = disableInputAutocompleteClass.hide(el);
         el2.name = disableInputAutocompleteClass.randomId();
         el2.autocomplete="new-password";
