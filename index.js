@@ -1,1 +1,1 @@
-export * from './src/disableAutocomplete.js'
+export * from './src/disableAutocomplete.min.js'
