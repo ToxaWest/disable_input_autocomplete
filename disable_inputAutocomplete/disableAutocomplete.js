@@ -11,14 +11,27 @@ class disableInputAutocomplete {
         return text;
     }
 
+    static hide(el){
+        el.style.display = 'none';
+        el.style.height = '0';
+        el.style.width = '0';
+        el.style.overflow = 'hidden';
+        el.autocomplete="new-password";
+        el.classList = null;
+        el.value = '';
+        return el
+    }
+
     disable() {
-        const el = document.getElementById(this.id);
-        const el2 = el.cloneNode(true);
-        el.type = 'hidden';
+        let el = document.getElementById(this.id);
+        const el2 = document.createElement('input');
+        el2.classList = el.classList;
+        el = disableInputAutocomplete.hide(el);
         el2.name = disableInputAutocomplete.randomId();
+        el2.autocomplete="new-password";
         el.parentNode.appendChild(el2);
-        el2.oninput = function () {
-            el.value = el2.value
+        el2.oninput = function (e) {
+            el.value = e.target.value;
         }
     }
 }
