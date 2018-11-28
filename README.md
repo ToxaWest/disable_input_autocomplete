@@ -3,6 +3,9 @@ Disable browser autocomplete without jQuery and 'autocomplete="off"'
 
 # How to use
 
+```html
 <input name="username" id="myId"/>
-
-new disableInputAutocomplete('myId').disable();
+<script>
+  new disableInputAutocomplete('myId').disable();
+</script>
+```
