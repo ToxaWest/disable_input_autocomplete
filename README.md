@@ -3,8 +3,8 @@ Disable browser autocomplete without jQuery and 'autocomplete="off"'
 
 # How to use
 
-require 'disableAutocomplete.min.js' to your project
-
+1. Require 'disableAutocomplete.min.js' to your project
+2. Example
 ```html
 <input name="username" id="myId"/>
 <script>
