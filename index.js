@@ -1,1 +1,2 @@
-export * from './src/disableAutocomplete.min.js'
+'use strict';
+module.exports = require('./lib/disableAutocomplete.js');

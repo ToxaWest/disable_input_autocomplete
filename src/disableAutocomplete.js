@@ -1,9 +1,9 @@
 export class disableInputAutocompleteClass {
-    constructor(id){
+    constructor(id) {
         this.id = id
     }
 
-    static randomId(){
+    static randomId() {
         let text = "";
         const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         for (let i = 0; i < 5; i++)
@@ -11,12 +11,12 @@ export class disableInputAutocompleteClass {
         return text;
     }
 
-    static hide(el){
+    static hide(el) {
         el.style.display = 'none';
         el.style.height = '0';
         el.style.width = '0';
         el.style.overflow = 'hidden';
-        el.autocomplete="new-password";
+        el.autocomplete = "new-password";
         el.classList = null;
         el.value = '';
         return el
@@ -29,7 +29,7 @@ export class disableInputAutocompleteClass {
         el2.placeholder = el.placeholder;
         el = disableInputAutocompleteClass.hide(el);
         el2.name = disableInputAutocompleteClass.randomId();
-        el2.autocomplete="new-password";
+        el2.autocomplete = "new-password";
         el.parentNode.appendChild(el2);
         el2.oninput = function (e) {
             el.value = e.target.value;
@@ -37,6 +37,6 @@ export class disableInputAutocompleteClass {
     }
 }
 
-export function disableInputAutocomplete(id){
+export function disableInputAutocomplete(id) {
     new disableInputAutocompleteClass(id).disable()
 }

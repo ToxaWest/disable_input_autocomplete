@@ -1,10 +1,11 @@
 {
   "name": "disable_input_autocomplete",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Disable browser autocomplete without jQuery and 'autocomplete=\"off\"'",
-  "main": "index.js",
+  "main": "lib/disableAutocomplete.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets es2015 -d lib/ src"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/ToxaWest/disable_input_autocomplete/issues"
   },
-  "homepage": "https://github.com/ToxaWest/disable_input_autocomplete#readme"
+  "homepage": "https://github.com/ToxaWest/disable_input_autocomplete#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-minify": "^0.5.0"
+  }
 }
